@@ -1,0 +1,13 @@
+# Site settings
+title: darth.kipsu.fi
+email: darth.kipsu@gmail.com
+description: I'm Verna, a second year computer sciences student at the Univeristy of Helsinki. In 
+  December 2013 I started my journy as a padawan programmer. I'm constantly thriving to be better 
+  as a  programmer as well as a person. I want to create well crafted, clean and functional code.
+
+baseurl: "" 
+url: "http://darth.kipsu.fi" 
+github_username:  DarthKipsu
+
+# Build settings
+markdown: kramdown
