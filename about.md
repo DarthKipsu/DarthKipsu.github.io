@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+photo: main
 permalink: /about/
 ---
 

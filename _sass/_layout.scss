@@ -12,6 +12,26 @@
   > .header-content {
     border-bottom: 1px solid $grey-color-light;
     background-color: $content-bg-color;
+    max-width: $content-width;
+    padding: 0;
+    position: relative;
+
+    > img {
+      margin-top: -450px;
+    }
+
+    > .site-title-meta {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      padding: $small-spacing;
+      box-sizing: border-box;
+
+      a {
+        color: $content-bg-color;
+      }
+    }
   }
 }
 

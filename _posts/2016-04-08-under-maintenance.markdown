@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "We're under maintenance!"
+photo: main
 date:   2016-04-08 08:46:37 +0300
 ---
 
