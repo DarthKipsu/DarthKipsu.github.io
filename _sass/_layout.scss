@@ -3,11 +3,16 @@
  */
 .site-header {
     border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
+    padding-top: $spacing-unit;
 
     // Positioning context for the mobile navigation icon
     position: relative;
+
+    > .header-content {
+      border-bottom: 1px solid $grey-color-light;
+      background-color: $content-bg-color;
+    }
 }
 
 .site-title {
@@ -98,8 +103,12 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
+
+    > .footer-content {
+      border-top: 1px solid $grey-color-light;
+      padding-top: $spacing-unit;
+      background-color: $content-bg-color;
+    }
 }
 
 .footer-heading {
@@ -167,8 +176,12 @@
 /**
  * Page content
  */
-.page-content {
-    padding: $spacing-unit 0;
+.page {
+
+    > .page-content {
+      background-color: $content-bg-color;
+      padding-top: $spacing-unit;
+    }
 }
 
 .page-heading {
