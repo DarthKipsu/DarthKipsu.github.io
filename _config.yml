@@ -1,13 +1,20 @@
 # Site settings
 title: darth.kipsu.fi
-email: darth.kipsu@gmail.com
 description: I'm Verna, a second year computer sciences student at the Univeristy of Helsinki. In 
   December 2013 I started my journy as a padawan programmer. I'm constantly thriving to be better 
   as a  programmer as well as a person. I want to create well crafted, clean and functional code.
 
+# Site contact info
 baseurl: "" 
-url: "http://darth.kipsu.fi" 
+url: "//darth.kipsu.fi" 
+author: Verna Koskinen
+email: darth.kipsu@gmail.com
+phone: +358451277921
+address: Susitie 3 A 4, 00800 Helsinki, Finland
 github_username:  DarthKipsu
+linkedin_url: "//www.linkedin.com/pub/verna-koskinen/85/339/a4a"
+facebook_url: "//www.facebook.com/verna.koskinen"
 
 # Build settings
 markdown: kramdown
+encoding: utf-8
