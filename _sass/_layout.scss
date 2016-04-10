@@ -268,7 +268,11 @@
  */
 .post-header {
   margin-bottom: $spacing-unit;
-  padding: 0 $spacing-unit;
+  padding: 0 $huge-spacing 0 $large-spacing;
+
+  @include media-query($on-laptop) {
+    padding: 0 $spacing-unit 0 $spacing-unit;
+  }
 }
 
 .post-title {
@@ -283,7 +287,11 @@
 
 .post-content {
   margin-bottom: $spacing-unit;
-  padding: 0 $spacing-unit;
+  padding: 0 $huge-spacing 0 $large-spacing;
+
+  @include media-query($on-laptop) {
+    padding: 0 $spacing-unit 0 $spacing-unit;
+  }
 
   h2 {
     font-size: 32px;
