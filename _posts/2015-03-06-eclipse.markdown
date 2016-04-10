@@ -5,7 +5,7 @@ photo: projects/eclipse
 github: //github.com/darthkipsu/eclipse-calculator
 excerpt: A probability calculator for the Galaxy.
 date:   2015-03-06
-languages: CSS HTML Clojure
+languages: [Clojure, CSS, HTML]
 categories: Project
 tags: CSS HTML Clojure
 ---

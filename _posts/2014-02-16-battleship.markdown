@@ -5,7 +5,7 @@ photo: projects/battleship
 github: //github.com/darthkipsu/Laivanupotus
 excerpt: A classic battleship game against a computer AI. Whoever sinks all the opponent ships first is the winner.
 date:   2014-02-16
-languages: CSS HTML JavaScript jQuery
+languages: [CSS, HTML, JavaScript, jQuery]
 categories: Project
 tags: CSS HTML JavaScript jQuery
 ---

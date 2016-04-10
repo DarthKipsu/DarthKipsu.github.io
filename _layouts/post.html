@@ -13,9 +13,7 @@ layout: default
     <a href="{{ page.link }}">Preview</a>
     {% endif %}
     {% if page.languages %} • 
-      {% for language in page.languages %}
-      <span itemprop="language">{{ language }}</span>
-      {% endfor %}
+    {% include languages.html languages=page.languages %}
     {% endif %}
   </header>
 

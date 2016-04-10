@@ -5,7 +5,7 @@ photo: projects/othello
 github: //github.com/darthkipsu/othello
 excerpt: A two player game of reversi.
 date:   2014-05-04
-languages: CSS HTML JavaScript jQuery NodeJs
+languages: [CSS, HTML, JavaScript, jQuery, NodeJs]
 categories: Project
 tags: CSS HTML JavaScript jQuery NodeJs
 ---

@@ -1,0 +1,3 @@
+{% for language in include.languages %}
+<span itemprop="language">{{ language }}{% if forloop.last != true %}, {% endif %}</span>
+{% endfor %}

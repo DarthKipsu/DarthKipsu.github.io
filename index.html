@@ -20,7 +20,11 @@ photo: main
             {{ post.date | date: "%b %-d, %Y" }}
 
             <h2>{{ post.title }}</h2>
-            <p>{{ post.categories[0] }}</p>
+            <p>
+              {{ post.categories[0] }}{% if post.languages %}:
+              {% include languages.html languages=post.languages %}
+              {% endif %}
+            </p>
             <p>{{ post.excerpt }}</p>
           </a>
         </div>

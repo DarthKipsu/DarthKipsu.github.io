@@ -5,7 +5,7 @@ photo: projects/donquijote
 github: //github.com/darthkipsu/massive-ironman
 excerpt: A wind mill fighting Lego Mindstorm robot.
 date:   2015-01-10
-languages: Java
+languages: [Java]
 categories: Project
 tags: Java
 ---

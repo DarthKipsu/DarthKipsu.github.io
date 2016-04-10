@@ -6,7 +6,7 @@ github: //github.com/darthkipsu/ratebeer
 link: //quiet-castle-3777.herokuapp.com/
 excerpt: Beer rating software with Ruby on Rails. A rails course work.
 date:   2015-03-01
-languages: CSS HTML Ruby
+languages: [Ruby on Rails, CSS, HTML]
 categories: Project
 tags: CSS HTML Ruby
 ---

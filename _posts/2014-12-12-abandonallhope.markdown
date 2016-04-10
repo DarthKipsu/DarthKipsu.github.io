@@ -5,7 +5,7 @@ photo: projects/abandonallhope
 github: //github.com/darthkipsu/abandon-all-hope
 excerpt: A tower defence inspired zombie survival game. How many days can you survive?
 date:   2014-12-12
-languages: Java
+languages: [Java]
 categories: Project
 tags: Java
 ---
