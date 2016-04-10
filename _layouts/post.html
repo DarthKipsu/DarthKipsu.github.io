@@ -9,6 +9,9 @@ layout: default
     {% if page.github %} •
     <a href="{{ page.github }}">GitHub</a>
     {% endif %}
+    {% if page.link %} •
+    <a href="{{ page.link }}">Preview</a>
+    {% endif %}
     {% if page.languages %} • 
       {% for language in page.languages %}
       <span itemprop="language">{{ language }}</span>

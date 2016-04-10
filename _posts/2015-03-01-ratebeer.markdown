@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "RateBeer"
+photo: projects/ratebeer
+github: //github.com/darthkipsu/ratebeer
+link: //quiet-castle-3777.herokuapp.com/
+excerpt: Beer rating software with Ruby on Rails. A rails course work.
+date:   2015-03-01
+languages: CSS HTML Ruby
+categories: Project
+tags: CSS HTML Ruby
+---
+
+This app is made for a Ruby on Rails web development course at Univeristy. It follows the course instructions and contains database tables for beers, breweries, beer styles, ratings, users and beer clubs. You can also search breweries and bars using [The Beer Mapping Project](//beermapping.com/api/reference/) api. Layout is styled with [Bootstrap](//getbootstrap.com/) CSS framework.
+
+Users can sign in and logged in users can rate beers, create and join beer clubs and add, edit and delete breweries and beers, as well as their own ratings. There’s also top ranks for best rated beers and breweries and users with most ratings. Users can be given admin status and users with admin rights can freeze or unfreeze other users accounts.
+
+**Comments:**
+
+It's a school project and created following the course instructions quite closely. I've changed the layout to please my own eye a bit more using [Flathood Bootstrap Template](//www.bootstrapzero.com/bootstrap-template/flathood), with my own coloring.
+
+**What I could have done better:**
+
+I think the app turned out quite well. I could have cleaned up some functions a bit more and tried to get rid of repetition in controller classes.
+
+**Lesson learned:**
+
+I learned the basics of creating web apps with Ruby on Rails.
