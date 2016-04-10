@@ -3,9 +3,10 @@ layout: post
 title:  "The Game of Love"
 photo: projects/gameoflove
 github: //github.com/DarthKipsu/loves-me-not
+excerpt: A quick game to find out if he loves you or not.
 date:   2014-02-14
 languages: CSS HTML JavaScript
-categories: projects
+categories: Project
 tags: CSS HTML JavaScript
 ---
 

@@ -219,16 +219,25 @@
 
   > li {
     margin-bottom: $spacing-unit;
-    position: relative;
+    border: 1px solid $grey-color;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    
+    a {
+      text-decoration: none;
+    }
+
+    .post-link > h2 {
+      margin: 0;
+    }
 
     .post-img {
-      height: 200px;
-      overflow: hidden;
-      border: 1px solid $grey-color;
-
-      > img {
-        margin-top: -150px;
-        max-width: none;
+      display: table-cell;
+      
+      @include media-query($on-palm) {
+        display: inline-block;
+        width: 100%;
       }
     }
   }
@@ -241,20 +250,15 @@
 
 .post-list-meta {
   font-size: $small-font-size;
-  color: $content-bg-color;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  min-width: 50%;
   padding: $small-spacing;
-  margin: $small-spacing;
-  background-color: rgba(135,127,138,0.75);
-  border: 1px solid $grey-color;
-}
-
-.post-link {
-  display: block;
-  font-size: 24px;
+  vertical-align: top;
+  line-height: 1.5;
+  display: table-cell;
+  
+  @include media-query($on-palm) {
+    display: inline-block;
+    width: 90%;
+  }
 }
 
 

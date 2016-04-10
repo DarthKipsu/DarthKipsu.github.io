@@ -3,9 +3,10 @@ layout: post
 title:  "Othello"
 photo: projects/othello
 github: //github.com/darthkipsu/othello
+excerpt: A two player game of reversi.
 date:   2014-05-04
 languages: CSS HTML JavaScript jQuery NodeJs
-categories: projects
+categories: Project
 tags: CSS HTML JavaScript jQuery NodeJs
 ---
 
