@@ -8,4 +8,4 @@ function changeHeaderImgSize() {
     }
 }
 
-changeHeaderImgSize()
+window.onLoad = changeHeaderImgSize()
