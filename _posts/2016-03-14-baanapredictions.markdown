@@ -29,7 +29,7 @@ A plot displaying how well 10% of randomly chosen days from within the training 
 
 With 0 error, all the dots would align to the dashed line. Root-mean-square deviation for the cyclist predictions is 377 cyclist with the final version of the classifier.
 
-A more comprehensive explanation of the work done during the project and also some statistical calculations to prove the significancy of the results gotten from the study are available [as a PDF documentation](/assets/ppml.pdf).
+A more comprehensive explanation of the work done during the project and also some statistical calculations to prove the significancy of the results gotten from the study are available [as a PDF documentation](/papers/ppml.pdf).
 
 **Comments:**
 
