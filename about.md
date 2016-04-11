@@ -9,6 +9,8 @@ I have a previous degree in environmental sciences, but begun studying programmi
 
 In my free time, when not learning about programming, I like to get outside with my dog and spouse and go walking in the forest, hiking or cycling. Nature is really important to me and I think caring for the environment and spending time in the nature is one of the best ways to keep ones mind at ease.
 
+![me](/images/about.jpg)
+
 **Name:** | {{ site.author }}
 **Email:** | <a href="mailto:{{ site.email }}">{{ site.email }}</a>
 **Phone:** | {{ site.phone }}
