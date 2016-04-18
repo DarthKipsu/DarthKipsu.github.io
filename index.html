@@ -5,13 +5,17 @@ photo: main
 
 <div class="home">
 
+  {% if paginator.page == 1 %}
   <h1 class="page-heading">Recent posts</h1>
+  {% endif %}
 
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
     {% include contentlist.html %}
     {% endfor %}
   </ul>
+
+  {% include pagination.html %}
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
