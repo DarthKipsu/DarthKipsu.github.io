@@ -1,0 +1,17 @@
+---
+layout: default
+title: Projects
+photo: main
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Projects</h1>
+
+  <ul class="post-list">
+    {% for post in site.categories['Project'] %}
+    {% include contentlist.html %}
+    {% endfor %}
+  </ul>
+
+</div>
