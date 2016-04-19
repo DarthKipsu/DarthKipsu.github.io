@@ -19,5 +19,5 @@ facebook_url: "//www.facebook.com/verna.koskinen"
 markdown: kramdown
 encoding: utf-8
 
-gems: [jekyll-paginate]
+gems: [jekyll-paginate, jekyll-gist]
 paginate: 10
