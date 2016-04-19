@@ -11,12 +11,28 @@ In my free time, when not learning about programming, I like to get outside with
 
 ![me](/images/about.jpg)
 
-**Name:** | {{ site.author }}
-**Email:** | <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-**Phone:** | {{ site.phone }}
-**Address:** | {{ site.address }}
+<table class="no-highlight">
+  <tbody>
+    <tr>
+      <td><strong>Name:</strong></td>
+      <td>{{ site.author }}</td>
+    </tr>
+    <tr>
+      <td><strong>Email:</strong></td>
+      <td><a href="mailto:{{ site.email }}">{{ site.email }}</a></td>
+    </tr>
+    <tr>
+      <td><strong>Phone:</strong></td>
+      <td>{{ site.phone }}</td>
+    </tr>
+    <tr>
+      <td><strong>Address:</strong></td>
+      <td>{{ site.address }}</td>
+    </tr>
+  </tbody>
+</table>
 
-<table>
+<table class="no-highlight">
   <tbody>
     <tr>
       <td><stronG>Website:</strong></td>
