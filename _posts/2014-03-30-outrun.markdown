@@ -1,0 +1,31 @@
+---
+layout: post
+title:  "Outrun Pyramid"
+photo: articles/outrun
+excerpt: Finding the most liked route through Out Run gamefield. My submission for Reaktor Fast Track challenge.
+date:   2014-03-30
+categories: Article
+tags: Algorithms Reaktor
+---
+
+I found out [Reaktor](//reaktor.fi/) is seeking employees with a fast track challenge, where you need to program a solution to a problem for them and if done well, you might get a job. I took part in it and made my entry yesterday evening.
+
+The job was to find the most liked route through Out Run gamefield, from a file with the likes collected in a pyramid shape. You could travel down the pyramid by accessing the two cells below your current position and the most liked route is the one that adds up to a biggest number. Here’s a picture borrowed from Reaktor site to illustrate the problem:
+
+{% include centered-img.html path='articles/outrun2' %}
+
+The actual files had 100 lines, adding up to 2^98 different route options. I dealt with the problem by first converting the text file to a two dimensional array, to be able to work with it. I used node.js to import the likes directly from the file, so that any similar file could be fed to the program.
+
+Next I went through all the lines, summing up each item with the bigger of the two numbers above it and saving it to another array. This way going down the pyramid, each item would add up to as big number as it’s possible for it. Finally checking from the last line, I could get the endpoint of the route with the most likes.
+
+Now I got the most likes, but I still don’t have the route. Finding the route follows the same kind of formula used to create the sum array, but going from the end towards the beginning. Each line saves the index of the route to another array, which is the final map for the route.
+
+At the end the results are printed out. The source for the likes can be found from my GitHub repo [here](//github.com/DarthKipsu/out-run-pyramid/blob/master/tree.txt).
+
+The route finding could be improved by taking into consideration any possible additional routes or forks in the route, that add up to the same amount of likes. But I left it out, because we went to see the new Captain America movie and I didn’t want to leave the program hanging for this week.
+
+I liked this task a lot. I’ve always enjoyed mathematics. Maybe I should specialize in data processing when I begin my programming studies.
+
+You can see the JavaScript implementation below:
+
+{% gist DarthKipsu/a8f44e47654d8a7b5bb8 %}
