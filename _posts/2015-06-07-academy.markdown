@@ -1,0 +1,31 @@
+---
+layout: post
+title:  "Reaktor Academy"
+photo: articles/academy
+excerpt: Summary of Reaktor Academy mentoring program for information technology and software service consultant work.
+date:   2015-06-07
+categories: Article
+tags: Development Reaktor
+---
+
+I've been attending [Reaktor Academy](//reaktor.com/academy) this spring, where the employees of [Reaktor](//reaktor.com/), a finnish creative technology company, have been telling us all about consultant work in the field. There's been six educational sessions, each with their own topic and informal discussions at the end. It's been incredibly fun, useful and reassuring experience.
+
+I had about a year of coding behind me, including one semester at the University when the academy begun. It was extremely useful for me, as I had not done any project works, had no idea about the scope of the field and was virtually thinking that coding is most of all there is.
+
+The first session was about self organizing teams and I even wrote a small article about my afterthoughts on the subjects earlier. The links to all the articles about the academy are at the end of this article. I liked the idea about the teams working together on a common goal and choosing their own ways of doing things. We actually tried developing a tiny "[miniprojekti](//github.com/DarthKipsu/mini-viitteet)" for out software engineering course at the University using the principles of self organizing teams. It was one of the most successful mini projects in that course and we achieved really great results.
+
+On user interfaces I learned how important it is to get in touch with the motives the users have for using whatever app is being created. You need to deliver what the customer and the users need rather than what they want, to make a successful project. Simulating users behaviour when designing the user interactions should always be done to ensure the user does not need to use extra effort in getting what they need.
+
+Everything you do should be something you can justify. And then, you should do nothing else. Maximizing the code not written is a great principle, but it works with visual design and user interfaces as well. You should take small steps in creating the software, build some, then measure the impacts and learn from your measurements.
+
+As a software developer, it's always best if you develop this T shaped skill set. You should have a wide knowledge about the field in general and then a deep knowledge of your favorite specialization, or two (three, more? Maybe you can be like the octocat). Academy was most helpful for providing some of that wide knowledge part.
+
+Being part of the academy reassured me I've made the right choice in changing fields from urban design to programming. Although I do hope I can work with both combined in the future, I now have nothing but excitement about my new challenges with programming.
+
+Once more, I'd like to thank everyone organizing the academy as well as my fellow students there, who also provided a lot of motivational and educational discussions after the official sessions.
+
+Other articles about the academy:
+
+- [#333 is the new BLACK](/article/2015/05/22/newblack.html)
+- [Simulating User Interfaces](/article/2015/03/23/simuser.html)
+- [It's Our Project](/article/2015/03/07/ourproject.html)
