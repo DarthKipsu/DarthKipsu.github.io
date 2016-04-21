@@ -1,0 +1,33 @@
+---
+layout: post
+title:  "Huffman Code"
+photo: articles/huffman
+excerpt: Data compression algorithm with variable length codes.
+date:   2015-02-16
+categories: Article
+tags: Algorithms Clojure Java
+---
+
+I first read about Huffman's algorithm from the great Lisp book [Structure and Interpretation of Computer Programs](//mitpress.mit.edu/books/structure-and-interpretation-computer-programs). The algorithm has a really interesting idea about storing data with prefixes based on the occurrences (weight) of the symbols being stored. The more times a symbol occurs in the data, the shorter the prefix is, causing the data compression volume to be larger.
+
+The algorithm bases on having data about the occurrences of symbols. You can count the symbols or use "typical data", for example when the data is English text, it's most common character might typically be space, followed by e or t. After finding the occurrences, a binary tree is formed with each symbol as a leaf, ordered so that the most common characters are closer to the top of the tree. The prefix for each character is obtained by going down the tree and adding 0 each time you need to turn left and 1 to right (or the other way around, as long as it's consistent). This causes the most common characters having shorter prefixes and bigger compression rate.
+
+{% include centered-img.html path='articles/huffman2' %}
+
+The image displays a tree created from text **"pakattavaa tekstii"**. A is the most common characters, occurring 5 times, following by T 4 times. I and K appear twice while others occur just once. So we get a occurences list of **{A:5, T:4, I:2, K:2, S:1, V:1, E:1, P:1, :1}**. These are set as the weights of the leafs (blue in the image). Parent nodes also have a weight based on their children.
+
+We start creating the tree from the bottom of the occurrences list. The first node will have P and space as it's leafs, the second E and the just created node. The parent node of E has a weight 3, which is greater than the combined weight of S and V, so we create a new parent node from them with weight of 2. We always try to combine the smallest possible weight we can get for the parent node, so I is combined with S and V to create weight 4 and K with E, P and space and so on. Finally when we have no new symbols, we combine our parent nodes to create a tree with a total weight of 18.
+
+{% include centered-img.html path='articles/huffman3' %}
+
+Now that we have formed the tree, we can assign prefixes based on the symbols locations down the tree. Each edge we travel down right adds 1 to the prefix and 0 for left. A is one edge right, then one left, so it's assigned a prefix 10, while I is one left, then right and left again so the prefix is 010.
+
+Using this type of prefix assignment, we can be sure that no prefix starts with a prefix of another symbol. This is why we don't need any separator between prefixes, even though they are not all of the same length. If you have a code 10110010 you can decode it easily by starting from the root and going down until you land in one of the leafs. 10 will take you to A, 110 to E and 010 ti I, so the text behind that encoding is unambiguously "aki".
+
+The text "pakattavaa tekstii" with the Huffman tree drawn above is about 36% of the size it would be with UTF-8 encoding. The more occurrences of the same letters there is the better the algorithm works. I practiced implementing it with Java and Clojure below.
+
+### Implementations
+
+I have implementation examples here in Java and Clojure.
+
+{% gist DarthKipsu/92f0d8832c3c35534137 %}
